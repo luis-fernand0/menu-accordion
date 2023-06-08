@@ -1,0 +1,79 @@
+.accordion {
+    width: 655px;
+    min-height: 347px;
+    
+    background: #FCFCFC;
+
+    box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.25);
+    border-radius: 21px;
+
+    display: flex;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 191px auto;
+    gap: 40px;
+}
+
+.accordion .ilustracao {
+    translate: -85px;
+}
+
+.accordion .perguntas {
+    margin: 60px 37px 60px 0;
+}
+
+.accordion .perguntas h1 {
+    margin-bottom: 15px;
+}
+
+.accordion .perguntas .pergunta .titulo-e-icon h2 {
+    font-weight: 500;
+    font-size: 17px;
+
+    max-width: 90%;
+}
+
+.accordion .perguntas .pergunta .titulo-e-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.accordion .perguntas .pergunta .titulo-e-icon h2, .icon {
+    cursor: pointer;
+}
+
+.accordion .perguntas .pergunta .titulo-e-icon .icon .seta-vermelha {
+    display: none;
+}
+
+.accordion .perguntas .pergunta .titulo-e-icon .icon .seta-vermelha.ativa {
+    display: inline;
+}
+
+.accordion .perguntas .pergunta .titulo-e-icon .icon .seta-cinza.fechada {
+    display: none;
+}
+
+
+.accordion .perguntas .pergunta .resposta {
+    font-weight: 300;
+    font-size: 15px;
+
+    max-width: 347px;
+
+    margin-top: 10px;
+
+    display: none;    
+}
+
+.accordion .perguntas .pergunta .resposta.mostrar-txt {
+    display: block;
+}
+
+hr {
+    margin: 15px 0 15px 0;
+
+    border: 1px solid #D5D5D5;
+}
